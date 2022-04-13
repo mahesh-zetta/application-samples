@@ -1,4 +1,4 @@
-namespace: my-project 
+namespace: default
 resources:
 - namespace.yaml
 - placementrule.yaml
