@@ -15,7 +15,7 @@ spec:
         app: zts-cmc
     spec:
       containers:
-      - name: nginx
+      - name: zts-cmc
         image: zettasetimg/test:zts-acm-application-0.0.2_commitid-8b8230
         ports:
         - containerPort: 8080
