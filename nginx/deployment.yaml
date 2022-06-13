@@ -1,24 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: zts-cmc
+  name: nginx-sample
   labels:
-    app: zts-cmc
+    app: nginx-sample
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
-      app: zts-cmc
+      app: nginx-sample
   template:
     metadata:
       labels:
-        app: zts-cmc
+        app: nginx-sample
     spec:
       containers:
-      - name: zts-cmc
-        image: zettasetimg/test:zts-acm-application-0.0.2_commitid-8b8230
+      - name: nginx
+        image: quay.io/jpacker/nginx:1.14.1
         ports:
         - containerPort: 8080
         imagePullPolicy: Always
-      imagePullSecrets:
-        - name: zts-dockerhub-token 
