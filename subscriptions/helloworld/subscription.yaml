@@ -7,7 +7,7 @@ metadata:
     app: helloworld-app
   annotations:
     apps.open-cluster-management.io/github-path: helloworld
-    apps.open-cluster-management.io/github-branch: main
+    apps.open-cluster-management.io/github-branch: production
 spec:
   channel: helloworld-ch/helloworld-channel
   placement:
